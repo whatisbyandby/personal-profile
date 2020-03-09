@@ -6,11 +6,18 @@
  */
 
 import React from "react"
+import { createGlobalStyle } from "styled-components"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    color: ${props => (props.theme === "purple" ? "purple" : "white")};
+  }
+`
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
