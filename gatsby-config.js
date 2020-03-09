@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Scott Perkins - Full Stack Engineer`,
-    description: `Profile for Scott Perkins`,
-    author: `@gatsbyjs`,
+    title: `Scott Perkins - Full Stack Developer`,
+    description: `Personal Profile for Scott Perkins`,
+    author: `Scott Perkins`,
   },
   plugins: [
     `gatsby-plugin-styled-components`,
