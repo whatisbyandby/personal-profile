@@ -1,5 +1,5 @@
 const theme = {
-  brandColor: "blue",
+  linkColor: "white",
 }
 
 export default theme

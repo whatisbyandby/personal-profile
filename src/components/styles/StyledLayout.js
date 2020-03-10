@@ -1,7 +1,10 @@
 import styled from "styled-components"
 
 const StyledLayout = styled.div`
-  display: flex;
+  height: 100%;
+  header {
+    height: 30%;
+  }
 `
 
-export { StyledLayout }
+export default StyledLayout

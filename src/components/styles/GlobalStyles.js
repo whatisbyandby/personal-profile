@@ -1,8 +1,20 @@
 import { createGlobalStyle } from "styled-components"
 
 const GlobalStyles = createGlobalStyle`  
-   html {
-       padding: 30px;
+   html, body, #___gatsby {
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+}
+
+div[role="group"][tabindex] {
+    height: 100%;
+}
+
+   #gatsby-focus-wrapper {
+       height: 100%;
    }
 
    a {

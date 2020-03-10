@@ -5,16 +5,17 @@ import { useStaticQuery, graphql } from "gatsby"
 import theme from "./styles/theme"
 import GlobalStyles from "./styles/GlobalStyles"
 import Header from "./Header"
+import StyledLayout from "./styles/StyledLayout"
 
 const Layout = ({ children }) => {
   return (
-    <div>
+    <StyledLayout>
       <ThemeProvider theme={theme}>
         <GlobalStyles />
         <Header />
         {children}
       </ThemeProvider>
-    </div>
+    </StyledLayout>
   )
 }
 
