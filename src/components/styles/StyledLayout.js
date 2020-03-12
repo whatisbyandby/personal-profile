@@ -5,11 +5,6 @@ const StyledLayout = styled.div`
   header {
     height: 30%;
   }
-  .background-layer {
-    height: 100%;
-    width: 100%;
-    background-color: hsla(0, 0%, 0%, 0.7);
-  }
 `
 
 export default StyledLayout

@@ -3,10 +3,13 @@ import { createGlobalStyle } from "styled-components"
 const GlobalStyles = createGlobalStyle`  
    html, body, #___gatsby {
     height: 100%;
+    font-family: sans-serif;
 }
 
 body {
     margin: 0px;
+    background-color: ${props => props.theme.black};
+    color: ${props => props.theme.white};
 }
 
 div[role="group"][tabindex] {

@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 const StyledNav = styled.nav`
-  height: 30%;
+  height: 20%;
   display: flex;
   justify-content: flex-end;
   ul {
@@ -14,7 +14,8 @@ const StyledNav = styled.nav`
   }
   a {
     font-weight: bold;
-    color: ${props => props.theme.linkColor};
+    font-size: 1.5em;
+    color: ${props => props.theme.white};
   }
 `
 export default StyledNav

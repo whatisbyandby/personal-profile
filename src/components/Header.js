@@ -3,11 +3,12 @@ import { Link } from "gatsby"
 import StyledNav from "./styles/StyledNav"
 import StyledBackground from "./styles/StyledBackground"
 import Image from "./image"
+import StyledLayer from "./styles/StyledBackgroundLayer"
 
 const Header = props => {
   return (
     <StyledBackground>
-      <div className="background-layer">
+      <StyledLayer>
         <StyledNav>
           <ul>
             <li>
@@ -21,7 +22,7 @@ const Header = props => {
             </li>
           </ul>
         </StyledNav>
-      </div>
+      </StyledLayer>
     </StyledBackground>
   )
 }

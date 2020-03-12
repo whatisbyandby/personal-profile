@@ -6,6 +6,7 @@ import theme from "./styles/theme"
 import GlobalStyles from "./styles/GlobalStyles"
 import Header from "./Header"
 import StyledLayout from "./styles/StyledLayout"
+import StyledContent from "./styles/StyledContent"
 
 const Layout = ({ children }) => {
   return (
@@ -13,7 +14,7 @@ const Layout = ({ children }) => {
       <ThemeProvider theme={theme}>
         <GlobalStyles />
         <Header />
-        {children}
+        <StyledContent>{children}</StyledContent>
       </ThemeProvider>
     </StyledLayout>
   )
