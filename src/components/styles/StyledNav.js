@@ -1,7 +1,6 @@
 import styled from "styled-components"
 
 const StyledNav = styled.nav`
-  height: 20%;
   display: flex;
   justify-content: flex-end;
   ul {
@@ -10,7 +9,7 @@ const StyledNav = styled.nav`
     justify-content: space-around;
   }
   li {
-    padding: 2em;
+    padding: 1em;
   }
   a {
     font-weight: bold;
