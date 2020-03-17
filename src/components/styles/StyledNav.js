@@ -9,11 +9,11 @@ const StyledNav = styled.nav`
     justify-content: space-around;
   }
   li {
-    padding: 1em;
+    margin: 1em;
   }
   a {
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1em;
     color: ${props => props.theme.white};
   }
 `
