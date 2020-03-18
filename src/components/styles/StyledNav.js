@@ -1,8 +1,11 @@
 import styled from "styled-components"
 
 const StyledNav = styled.nav`
+  width: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
+  align-items: center;
+  background-color: ${props => props.theme.blackTrans};
   ul {
     display: flex;
     list-style: none;

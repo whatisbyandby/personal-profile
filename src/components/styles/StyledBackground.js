@@ -21,12 +21,7 @@ const BackgroundSection = ({ className, children }) => (
       // Set ImageData.
       const imageData = data.desktop.childImageSharp.fluid
       return (
-        <BackgroundImage
-          Tag="header"
-          className={className}
-          fluid={imageData}
-          backgroundColor={`#040e18`}
-        >
+        <BackgroundImage Tag="div" className={className} fluid={imageData}>
           {children}
         </BackgroundImage>
       )
@@ -34,4 +29,13 @@ const BackgroundSection = ({ className, children }) => (
   />
 )
 
-export default BackgroundSection
+const StyledBackgroundSection = styled(BackgroundSection)`
+  height: 100%;
+  width: 100%;
+  background-position: bottom center;
+  background-repeat: repeat-y;
+  background-size: cover;
+  margin: 0;
+`
+
+export default StyledBackgroundSection

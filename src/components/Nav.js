@@ -5,8 +5,11 @@ import StyledNav from "./styles/StyledNav"
 const Nav = props => {
   return (
     <StyledNav>
+      <h3>
+        <Link to="/">Scott Perkins</Link>
+      </h3>
       <ul>
-        <li>
+        <li id="about-nav">
           <Link to="/about">About</Link>
         </li>
         <li>

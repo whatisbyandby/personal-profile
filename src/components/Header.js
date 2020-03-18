@@ -1,18 +1,17 @@
 import React from "react"
+import styled from "styled-components"
 
-import StyledBackground from "./styles/StyledBackground"
-import Image from "./image"
-import StyledLayer from "./styles/StyledBackgroundLayer"
 import Nav from "./Nav"
+
+const StyledHeader = styled.header`
+  padding-top: 15%;
+`
 
 const Header = props => {
   return (
-    <>
-      <StyledBackground>
-        <StyledLayer />
-      </StyledBackground>
+    <StyledHeader>
       <Nav />
-    </>
+    </StyledHeader>
   )
 }
 

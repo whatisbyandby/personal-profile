@@ -7,14 +7,17 @@ import GlobalStyles from "./styles/GlobalStyles"
 import Header from "./Header"
 import StyledLayout from "./styles/StyledLayout"
 import StyledContent from "./styles/StyledContent"
+import StyledBackground from "./styles/StyledBackground"
 
 const Layout = ({ children }) => {
   return (
     <StyledLayout>
       <ThemeProvider theme={theme}>
         <GlobalStyles />
-        <Header />
-        <StyledContent>{children}</StyledContent>
+        <StyledBackground>
+          <Header />
+          <StyledContent>{children}</StyledContent>
+        </StyledBackground>
       </ThemeProvider>
     </StyledLayout>
   )
