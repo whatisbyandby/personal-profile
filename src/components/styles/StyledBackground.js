@@ -35,7 +35,6 @@ const StyledBackgroundSection = styled(BackgroundSection)`
   background-position: bottom center;
   background-repeat: repeat-y;
   background-size: cover;
-  margin: 0;
 `
 
 export default StyledBackgroundSection

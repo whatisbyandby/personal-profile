@@ -1,9 +1,44 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Header renders correctly 1`] = `
-<div>
-  <h1>
-    This is the header
-  </h1>
-</div>
+<header
+  className="sc-AxirZ leJUON"
+>
+  <nav
+    className="sc-AxjAm lcvwrE"
+  >
+    <h3>
+      <a
+        href="/"
+      >
+        Scott Perkins
+      </a>
+    </h3>
+    <ul>
+      <li
+        id="about-nav"
+      >
+        <a
+          href="/about"
+        >
+          About
+        </a>
+      </li>
+      <li>
+        <a
+          href="/portfolio"
+        >
+          Portfolio
+        </a>
+      </li>
+      <li>
+        <a
+          href="/contact"
+        >
+          Contact
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
 `;
