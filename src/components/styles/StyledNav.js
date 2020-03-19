@@ -5,7 +5,7 @@ const StyledNav = styled.nav`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: ${props => props.theme.black};
+  background-color: ${props => props.theme.blackTrans};
   ul {
     display: flex;
     list-style: none;
