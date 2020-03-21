@@ -1,5 +1,5 @@
 import React from "react"
-import SEO from "../components/Seo"
+import SEO from "../components/seo"
 import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 import Layout from "../components/Layout"

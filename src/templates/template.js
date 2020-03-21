@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/Layout"
-import SEO from "../components/Seo"
+import SEO from "../components/seo"
 
 export default function IndexPage({ data }) {
   const { markdownRemark } = data // data.markdownRemark holds your post data
