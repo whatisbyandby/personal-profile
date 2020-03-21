@@ -13,10 +13,11 @@ const Layout = ({ children }) => {
     <StyledLayout>
       <ThemeProvider theme={theme}>
         <GlobalStyles />
-        <StyledBackground>
-          <Header />
-          <StyledContent>{children}</StyledContent>
-        </StyledBackground>
+        <Header />
+        <StyledContent>{children}</StyledContent>
+        {/* <StyledBackground>
+          
+        </StyledBackground> */}
       </ThemeProvider>
     </StyledLayout>
   )
