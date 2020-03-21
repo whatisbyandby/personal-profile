@@ -18,6 +18,9 @@ const Nav = props => {
         <li>
           <Link to="/contact">Contact</Link>
         </li>
+        <li>
+          <Link to="/posts">Posts</Link>
+        </li>
       </ul>
     </StyledNav>
   )

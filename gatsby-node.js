@@ -6,11 +6,15 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const profilePageTemplate = path.resolve("src/templates/template.js")
   const result = await graphql(`
     {
-      allMarkdownRemark {
+      allMarkdownRemark(
+        sort: { order: DESC, fields: [frontmatter___date] }
+        limit: 1000
+      ) {
         edges {
           node {
             frontmatter {
               path
+              date
             }
           }
         }
