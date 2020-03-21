@@ -23,7 +23,7 @@ const PostCard = props => {
   const { node } = edge
   console.log(node.id)
   return (
-    <Card key={node.id}>
+    <Card>
       <h3>
         <Link to={node.frontmatter.path}>
           {node.frontmatter.title} - {node.frontmatter.date}

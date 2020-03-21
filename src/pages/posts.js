@@ -42,7 +42,7 @@ export default function Posts() {
       <SEO title="Posts" />
       <CardContainer>
         {edges.map(edge => (
-          <PostCard edge={edge} />
+          <PostCard edge={edge} key={edge.node.id} />
         ))}
       </CardContainer>
     </Layout>
