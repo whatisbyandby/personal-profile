@@ -14,11 +14,11 @@ export default function IndexPage({ data }) {
       <SEO title="Home" />
       <div className="content-container">
         <h1>{frontmatter.title}</h1>
+        <div
+          className="blog-post-content"
+          dangerouslySetInnerHTML={{ __html: html }}
+        />
       </div>
-      <div
-        className="blog-post-content"
-        dangerouslySetInnerHTML={{ __html: html }}
-      />
     </Layout>
   )
 }
