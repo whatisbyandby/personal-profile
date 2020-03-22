@@ -4,6 +4,7 @@ const GlobalStyles = createGlobalStyle`
    html, body, #___gatsby {
     height: 100%;
     font-family: sans-serif;
+    line-height: 1.5;
 }
 
 body {
