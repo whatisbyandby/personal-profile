@@ -9,6 +9,7 @@ export default function AboutPage() {
     <Layout className="layout">
       <SEO title="Contact" />
       <div className="content-container">
+        <h1>Contact Me</h1>
         <ContactForm />
       </div>
     </Layout>

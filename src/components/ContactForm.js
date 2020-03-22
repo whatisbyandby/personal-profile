@@ -1,12 +1,22 @@
 import React, { useState } from "react"
 import styled from "styled-components"
 import { TextField, Button } from "@material-ui/core"
+import sendEmail from "../utils/sendEmail"
 
 const StyledForm = styled.form`
   width: 100%;
   .MuiFormControl-root {
     margin: 1em 0;
     width: 100%;
+  }
+  .fav-color {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 0;
+    z-index: -1;
   }
 `
 
@@ -15,6 +25,7 @@ const ContactForm = props => {
   const [email, updateEmail] = useState("")
   const [subject, updateSubject] = useState("")
   const [message, updateMessage] = useState("")
+  const [favColor, updateFavColor] = useState("")
   const [nameValidError, updateNameValid] = useState("")
   const [emailValidError, updateEmailValid] = useState("")
   const [subjectValidError, updateSubjectValid] = useState("")
@@ -52,8 +63,18 @@ const ContactForm = props => {
     if (!valid) {
       return
     }
-    console.log("Vaid Input")
-    console.log(await fetch("/.netlify/functions/sendEmail"))
+    const res = await sendEmail({ name, email, subject, message, favColor })
+    if (res.status === 200) {
+      alert("Your message has been sent")
+      updateName("")
+      updateEmail("")
+      updateSubject("")
+      updateMessage("")
+      return
+    }
+    alert(
+      "Your message failed to send at this time, I'm sorry and please try again later"
+    )
   }
 
   return (
@@ -99,6 +120,13 @@ const ContactForm = props => {
         onFocus={() => updateMessageValid("")}
         variant="outlined"
         helperText={messageValidError ? messageValidError : undefined}
+      />
+      <input
+        className="fav-color"
+        type="text"
+        value={favColor}
+        onChange={event => handleChange(event, updateFavColor)}
+        autoComplete="off"
       />
       <Button variant="contained" type="submit">
         Submit
