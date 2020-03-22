@@ -3,6 +3,7 @@ path: "/posts/post-three"
 date: "2020-03-04"
 title: "Post Three"
 description: "A Post about the number Two"
+featuredImage: "mountains.jpg"
 ---
 
 I'm baby health goth blog hella food truck microdosing 90's sustainable artisan. Organic beard affogato, chambray gastropub yr scenester. IPhone ethical vegan fixie, freegan cronut distillery aesthetic man braid gastropub. Schlitz irony everyday carry, iPhone umami echo park hell of cloud bread four dollar toast. Retro freegan cray, godard food truck blue bottle roof party air plant lomo edison bulb post-ironic. Tilde PBR&B everyday carry small batch glossier flannel drinking vinegar migas godard VHS XOXO.
@@ -11,8 +12,35 @@ I'm baby health goth blog hella food truck microdosing 90's sustainable artisan.
 
 ###This is some Sub Topics
 
-- This is a bullet point list
-- And another bullet point
+```Python
+def merge_sort(unsorted):
+    length = len(unsorted)
+    if length == 1:
+        # A list of one is already sorted
+        return unsorted
+    half = length / 2
+    part_a = unsorted[:half]
+    part_b = unsorted[half:]
+    sorted_a = merge_sort(part_a)
+    sorted_b = merge_sort(part_b)
+    return merge(sorted_a, sorted_b)
+
+
+def merge(part_a, part_b):
+    sorted_array = []
+    while len(part_a) > 0 and len(part_b) > 0:
+        if part_a[0] > part_b[0]:
+            sorted_array.append(part_b.pop(0))
+        else:
+            sorted_array.append(part_a.pop(0))
+
+    while len(part_a) > 0:
+        sorted_array.append(part_a.pop(0))
+
+    while len(part_b) > 0:
+        sorted_array.append((part_b.pop(0)))
+    return sorted_array
+```
 
 Brooklyn you probably haven't heard of them tumblr williamsburg unicorn, chambray gentrify keytar neutra poutine slow-carb coloring book food truck migas shoreditch. Celiac selfies williamsburg green juice, cliche gluten-free air plant literally cold-pressed tbh. Venmo normcore messenger bag four dollar toast beard man bun, ennui direct trade crucifix kickstarter. Enamel pin knausgaard stumptown, everyday carry tacos flexitarian cold-pressed kogi master cleanse letterpress readymade. Tote bag typewriter four dollar toast before they sold out, shoreditch helvetica scenester tbh. Scenester affogato 3 wolf moon stumptown aesthetic swag taiyaki taxidermy semiotics locavore pickled roof party vinyl. Mlkshk pickled bitters chambray affogato sustainable.
 

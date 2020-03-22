@@ -1,11 +1,15 @@
 ---
-path: "/posts/post-two"
-date: "2020-03-17"
-title: "Post Two"
-description: "A Post about the number Two"
+path: "/posts/post-four"
+date: "2020-03-12"
+title: "Post Four"
+description: "A Post about the number 4"
+featuredImage: "mountains.jpg"
 ---
 
 I'm baby health goth blog hella food truck microdosing 90's sustainable artisan. Organic beard affogato, chambray gastropub yr scenester. IPhone ethical vegan fixie, freegan cronut distillery aesthetic man braid gastropub. Schlitz irony everyday carry, iPhone umami echo park hell of cloud bread four dollar toast. Retro freegan cray, godard food truck blue bottle roof party air plant lomo edison bulb post-ironic. Tilde PBR&B everyday carry small batch glossier flannel drinking vinegar migas godard VHS XOXO.
+
+- This is a bullet point list
+- And another bullet point
 
 Brooklyn you probably haven't heard of them tumblr williamsburg unicorn, chambray gentrify keytar neutra poutine slow-carb coloring book food truck migas shoreditch. Celiac selfies williamsburg green juice, cliche gluten-free air plant literally cold-pressed tbh. Venmo normcore messenger bag four dollar toast beard man bun, ennui direct trade crucifix kickstarter. Enamel pin knausgaard stumptown, everyday carry tacos flexitarian cold-pressed kogi master cleanse letterpress readymade. Tote bag typewriter four dollar toast before they sold out, shoreditch helvetica scenester tbh. Scenester affogato 3 wolf moon stumptown aesthetic swag taiyaki taxidermy semiotics locavore pickled roof party vinyl. Mlkshk pickled bitters chambray affogato sustainable.
 

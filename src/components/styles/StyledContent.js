@@ -12,6 +12,10 @@ const StyledContent = styled.section`
     background-color: ${props => props.theme.white};
     padding: 2em;
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    a {
+      color: black;
+      font-weight: bold;
+    }
   }
   p {
     text-align: justify;
