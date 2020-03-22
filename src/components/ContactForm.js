@@ -53,7 +53,7 @@ const ContactForm = props => {
       return
     }
     console.log("Vaid Input")
-    console.log(await fetch("/.netlify/src/functions/sendEmail"))
+    console.log(await fetch("/src/functions/sendEmail"))
   }
 
   return (
