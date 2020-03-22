@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 const StyledContent = styled.section`
-  background-color: ${props => props.theme.whiteTrans};
+  background-color: ${props => props.theme.blackTrans};
   color: ${props => props.theme.black};
   padding: 2em;
   margin: auto;
@@ -10,7 +10,7 @@ const StyledContent = styled.section`
     margin: auto;
     background-color: ${props => props.theme.white};
     padding: 2em;
-    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 2px;
     a {
       color: black;
       font-weight: bold;
