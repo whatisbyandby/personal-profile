@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Scott Perkins",
   "dependencies": {
+    "@material-ui/core": "^4.9.7",
     "babel-plugin-styled-components": "^1.10.7",
     "gatsby": "^2.19.7",
     "gatsby-background-image": "^0.10.2",
