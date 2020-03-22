@@ -4,6 +4,7 @@ const xss = require("xss")
 sgMail.setApiKey(process.env.SENDGRID_API_KEY)
 
 exports.handler = async function(event, context) {
+  console.log("Sending Email")
   const data = JSON.parse(event.body)
   const cleanName = xss(data.name)
   const cleanEmail = xss(data.email)
@@ -17,7 +18,7 @@ exports.handler = async function(event, context) {
     html: `<div><h1>${cleanSubject}</h1><h3><a href="mailto:${cleanEmail}">${cleanEmail}<a><h3><p>${cleanMessage}<p></div>`,
   }
   try {
-    sgMail.send(msg)
+    await sgMail.send(msg)
   } catch (error) {
     return { statusCode: 400, body: "Something Went Wrong" }
   }
