@@ -4,7 +4,6 @@ const xss = require("xss")
 sgMail.setApiKey(process.env.SENDGRID_API_KEY)
 
 exports.handler = async function(event, context) {
-  console.log(process.env.EMAIL_ADDRESS)
   const data = JSON.parse(event.body)
   const cleanName = xss(data.name)
   const cleanEmail = xss(data.email)
