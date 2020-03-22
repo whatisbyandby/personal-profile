@@ -24,6 +24,12 @@ const Card = styled(Link)`
     transition-duration: 250ms;
     transform: scale(1.03);
   }
+
+  @media (max-width: 500px) {
+    margin: 0.25em 0;
+    padding: 1em;
+    box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.25);
+  }
 `
 
 const PostCard = props => {

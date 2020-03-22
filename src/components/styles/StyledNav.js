@@ -1,7 +1,6 @@
 import styled from "styled-components"
 
 const StyledNav = styled.nav`
-  width: 100%;
   padding: 0 1em;
   display: flex;
   justify-content: space-around;
@@ -9,6 +8,7 @@ const StyledNav = styled.nav`
   background-color: ${props => props.theme.blackTrans};
   ul {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     justify-content: space-around;
   }

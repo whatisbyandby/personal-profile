@@ -31,7 +31,6 @@ const BackgroundSection = ({ className, children }) => (
 
 const StyledBackgroundSection = styled(BackgroundSection)`
   height: 100%;
-  width: 100%;
   background-position: bottom center;
   background-repeat: repeat-y;
   background-size: cover;

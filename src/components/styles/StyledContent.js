@@ -7,7 +7,6 @@ const StyledContent = styled.section`
   margin: auto;
   height: 100%;
   .content-container {
-    width: 80%;
     margin: auto;
     background-color: ${props => props.theme.white};
     padding: 2em;
@@ -19,6 +18,15 @@ const StyledContent = styled.section`
   }
   p {
     text-align: justify;
+  }
+
+  @media (max-width: 500px) {
+    padding: 0;
+    margin: 0;
+    .content-container {
+      padding: 1em;
+      margin: 0;
+    }
   }
 `
 

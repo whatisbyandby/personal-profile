@@ -6,11 +6,13 @@ import Layout from "../components/layout"
 import PostCard from "../components/PostCard"
 
 const CardContainer = styled.div`
-  width: 80%;
   margin: auto;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  @media (max-width: 500px) {
+  }
 `
 
 export default function Posts() {
