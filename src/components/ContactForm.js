@@ -46,13 +46,14 @@ const ContactForm = props => {
     return valid
   }
 
-  const handleSubmit = event => {
+  const handleSubmit = async event => {
     event.preventDefault()
     const valid = validateInput()
     if (!valid) {
       return
     }
     console.log("Vaid Input")
+    console.log(await fetch("/.netlify/src/functions/sendEmail"))
   }
 
   return (
