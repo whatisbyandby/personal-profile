@@ -9,7 +9,7 @@ const GlobalStyles = createGlobalStyle`
 
 body {
     margin: 0px;
-    background-color: ${props => props.theme.black};
+    background-color: ${props => props.theme.lightBlack};
     color: ${props => props.theme.white};
 }
 

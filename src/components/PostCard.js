@@ -8,8 +8,8 @@ const Card = styled(Link)`
   flex-grow: 1;
   margin: 2em;
   padding: 2em;
-  border-radius: 3px;
-  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 2px;
+  box-shadow: ${props => props.theme.boxShadow};
   display: flex;
   flex-direction: column;
   justify-content: center;
