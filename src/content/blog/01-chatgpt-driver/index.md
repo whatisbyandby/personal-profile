@@ -617,8 +617,11 @@ target_link_libraries(si7021
 
 ```
 
-The code compiled without any issues, and I was able to flash the code to the Raspberry Pi Pico. I connected the SDA and SCL pins to the Si7021 sensor, and powered up the Pico. Oddly the code seems to be reading the wrong information from the chip, as the first byte read is 0x1A, which is not one of the expected values. I'll need to take a closer look at the code, and the datasheet to see what is going wrong.
+The code compiled without any issues, and I was able to flash the code to the Raspberry Pi Pico. I connected the SDA and SCL pins to the Si7021 sensor, and powered up the Pico. Oddly the code seems to be reading the wrong information from the chip, as the first byte read is 0x1A, which is not one of the expected values. I'll need to take a closer look at the code, the wiring, and the datasheet to see what is going wrong. 
+
+![alt text](image-17.png)
 
 ### Summary
 
-So we did eventually get code that compiles and runs, and communicates with the Si7021 sensor. This code is a resonable start, but not exactly what I would call high quality code. The code is very specific to the Pico SDK, and would need to be refactored to work with other platforms. 
+So I did eventually get code that compiles and runs, and communicates with the Si7021 sensor. So will I continue to use ChatGPT for all my software develpment endoevors. Well it depends. ChatGPT was great for quickly digging through the datasheet, and I've found that it helped me find the specific details that I need quickly. It also did a pretty good job extracting the commands in the table from the datasheet, and creating the definitions for the commands in the headerfile. What I didn't like about using ChatGPT is that it generated a LOT of code with every prompt, even when I asked for only small chinks at a time. The quality of the code was pretty inconsistent, and it feels a bit like a collection of example code all pasted together. It still took a lot of work to review each line of code, and many times there were subtle problems in the code, that could be hard to catch. The code that was generated didn't take into account error handling, which obviously wouldn't make the cut as production code, and the code was also structured in a way that would make it difficult to test. Maybe the code could have been better if I was more explicit about exactly what I wanted in each prompt, but it seems like there are diminishing returns, as then really it's only saving me the time it takes to type out the code. I certainly am going to keep ChatGPT close at hand in my workflow software develpment, but I don't think it's really practical as a replacement for writing well structured, and testable code. 
+
