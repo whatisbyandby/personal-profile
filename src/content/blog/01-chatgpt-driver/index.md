@@ -114,7 +114,6 @@ Okay, not too bad, the values appear to be correct, but the naming is still real
 Perfect names eh? Maybe not but they'll do for now. 
 
 This feels like a pretty good start defining the commands. Let's move on to defining some of the basics to communicate with the sensor over I2C.
-I plan to to use the Raspberry Pi Pico for my projects, using the C/C++ Pico SDK but I would like to create a generic class that can be used with other platforms, like maybe the ESP32 using the ESP-IDF in the future. 
 
 ### Class Definition
 
