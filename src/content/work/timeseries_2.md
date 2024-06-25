@@ -5,4 +5,4 @@ dateStart: "06/01/2019"
 dateEnd: "11/01/2020"
 ---
 
-Iure illo neque tempora, voluptatem est quaerat voluptas praesentium ipsa dolorem dignissimos nulla ratione distinctio quae maiores eligendi nostrum? Quibusdam, debitis voluptatum, lorem ipsum dolor. Sit amet consectetur adipisicing elit.
+As the Innovation Team Lead at TimeSeries US, I worked with the CTO to design and implement solution templates that could be used to quickly deploy solutions for clients. I worked with the engineering team to ensure that the solutions were robust, scalable, and secure. I also worked with the sales team to help them understand the technical aspects of the solutions we were offering. A notable project I worked on was a solution template for a smart warehouse system, that was integrated with an RFID reader to track inventory in real time. I also continued to work as a consultant as a solution architect, working with client in manufacturing and healthcare. 

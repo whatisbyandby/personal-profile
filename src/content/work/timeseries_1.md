@@ -5,4 +5,4 @@ dateStart: "05/01/2018"
 dateEnd: "06/01/2019"
 ---
 
-Iure illo neque tempora, voluptatem est quaerat voluptas praesentium ipsa dolorem dignissimos nulla ratione distinctio quae maiores eligendi nostrum? Quibusdam, debitis voluptatum, lorem ipsum dolor. Sit amet consectetur adipisicing elit.
+I worked as a consultant at TimeSeries US, a small startup that was later acquired by Siemens. I worked with cleints to understand their business needs and design solutions that would help them achieve their goals. I worked with an array of clients in a variety of industries, including healthcare, manufacturing, and real estate. 
